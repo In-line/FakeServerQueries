@@ -45,7 +45,6 @@
 #include <functional>
 
 #include <cstring>
-#include <unitypes.h>
 
 
 class RawByteReader {

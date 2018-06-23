@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.11)
+cmake_minimum_required(VERSION 3.9)
 project(FakeServerQueries)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -62,3 +62,4 @@ add_executable(tester ${TEST_SOURCE_FILES})
 target_include_directories(tester PUBLIC ${GTEST_INCLUDE_DIR})
 target_include_directories(tester PUBLIC ${SRC_DIR} ${SRC_DIR}/helper)
 target_link_libraries(tester gtest gtest_main ${PROJECT_NAME}_static)
+add_custom_command(TARGET tester POST_BUILD COMMAND ./tester)
