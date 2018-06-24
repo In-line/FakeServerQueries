@@ -40,8 +40,8 @@
 #define VERSION "1.0"
 #define AUTHOR "Inline"
 
-#define RATIO 500
-#define THINK_DELAY 1.0
+#define RATIO 0.25
+#define THINK_DELAY 5.0
 #define RESERVE_SLOTS 1
 
 #define SCORE_INCREMENT_CHANCE 0.5
